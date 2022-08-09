@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #666;
+}
+
+.app {
+    width: 100%;
+    height: 45px;
+}
+
+.app ul li {
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    background-color: #333;
+    list-style: none;
+    float: left;
+
+}
+
+.app ul li:nth-child(1) {
+    width: 8%;
+}
+
+.app ul li:nth-child(2) {
+    width: 10%;
+}
+
+.app ul li:nth-child(3) {
+    width: 57%;
+    color: #fff;
+    cursor: default;
+}
+
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #f63515;
+    color: #fff;
+    cursor: pointer;
+}
+
+.app ul li:nth-child(1) img {
+    width: 10px;
+}
+
+.app ul li:nth-child(2) img {
+    width: 30px;
+}
+
+.search {
+    position: fixed;
+    height: 44px;
+    width: 100%;
+    z-index: 1;
+    top: 45px;
+}
+
+.search .list_btn {
+    display: block;
+    width: 40px;
+    height: 44px;
+    background: url(../images/list.png) no-repeat;
+    background-size: 80%;
+    background-position: 5px;
+    text-align: center;
+}
+
+.search .user {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+.search .search_text {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: calc(100% - 45px * 2);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.search .search_text #jd_s {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+    height: calc(100% - 6px);
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.search .search_text #jd_s input[type="search"] {
+    position: absolute;
+    border: none;
+    outline: none;
+    /* outline: none; 选中时边框取消 */
+    left: 10%;
+    height: calc(100% - 20px);
+    width: 85%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 2px solid #ccc;
+    padding-left: 30px;
+    color: #333;
+}
+
+.search .search_text #jd_s b {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 15px;
+    background: url(https://st.360buyimg.com/so/images/search/jd-sprites.png?__inline=) no-repeat;
+    background-position: -80px 0;
+    background-size: 200px;
+    left: 11%;
+    top: 30%;
+    z-index: 1;
+}
+
+.search .search_text #jd_s i {
+    position: absolute;
+    display: block;
+    background: url(../images/search_logo.png) no-repeat;
+    width: 25px;
+    height: 20px;
+    background-size: 100%;
+    top: 25%;
+    left: 3%;
+}
+
+.slider_ {
+    height: 220px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: #c82519;
+    border-radius: 0 0 30% 30%;
+    top: 0;
+}
+
+.slider ul {
+    position: relative;
+    top: 10%;
+    width: 100%;
+}
+
+.slider ul li {
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+
+.slider ul li img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+}
+
+.main_content {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    
+}
+
+.focus {
+    position: absolute;
+    height: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(1vw * 50);
+    line-height: 15px;
+}
+
+.focus span[class^="focu"] {
+    display: block;
+    float: left;
+    background-color: rgba(83, 83, 83, 0.3);
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+    border-radius: 50%;
+}
+
+.focus span[select="1"] {
+    background-color: #f63515;
+}
+
+.main_content .nav {
+    position: absolute;
+    top: 100%;
+}
+
+.main_content .nav ul {
+    width: 100%;
+}
+
+.main_content .nav ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+}
+
+.main_content .nav ul li img {
+    width: 80%;
+}
+
+.main_content .nav ul li span {
+    font-size: 3vw;
+    white-space: nowrap;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+footer a {
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+footer a img {
+    width: 16vw;
+}
